@@ -1,8 +1,22 @@
 const {Router} = require("express");
 const messageRouter = Router();
 
+ const messages = 
+ [{
+     text: "Hi there!",
+     user: "Bigyan",
+     added: new Date()
+ },
+ {
+     text: "Hello world!",
+     user: "sudha",
+     added: new Date()
+
+ }];
+
 messageRouter.get("/",(req,res)=>{
-    res.send("message default!");
+  
+    res.render("message",{title: "Mini Messageboard", messages: messages});
 });
 
 messageRouter.get("/new",(req,res)=>{
