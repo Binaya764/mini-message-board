@@ -20,6 +20,7 @@ messageRouter.get("/",(req,res)=>{
 });
 
 messageRouter.get("/new",(req,res)=>{
-    res.send("new message");
+    //res.send("new message");
+    res.render("form",{title: "Mini messageboard", messages: messages  });
 });
 module.exports = messageRouter;
