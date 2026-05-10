@@ -8,11 +8,11 @@ const messageRouter = Router();
      added: new Date()
  },
  {
-     text: "Hello world!",
-     user: "sudha",
-     added: new Date()
-
- }];
+    text: "#!",
+    user: "shebang",
+    added: new Date()
+ }
+ ];
 
 messageRouter.get("/",(req,res)=>{
   
@@ -25,8 +25,11 @@ messageRouter.get("/new",(req,res)=>{
 });
 
 messageRouter.post("/new",(req,res)=>{
-    messages.push({text: messageText, user: messageUser, added: new Date()});
-    console.log("post request");
+    const authorName = req.body.messageUser;
+    const authorText = req.body.messageText;
+
+    messages.push({text: authorText, user: authorName, added: new Date()});
+    
     res.redirect("/");
 });
 module.exports = messageRouter;
