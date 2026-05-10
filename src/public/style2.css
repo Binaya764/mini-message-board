@@ -1,0 +1,66 @@
+/* Container for the whole message board */
+.board-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.board-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+/* The Individual Message Card */
+.message-card {
+    background: #ffffff;
+    border: 1px solid #e1e4e8;
+    border-radius: 12px;
+    padding: 20px;
+    margin-bottom: 16px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.message-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* User name styling */
+.message-user {
+    font-weight: 700;
+    color: #1a73e8;
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+}
+
+/* The message text */
+.message-text {
+    color: #3c4043;
+    line-height: 1.5;
+    margin: 0 0 12px 0;
+}
+
+/* The timestamp */
+.message-date {
+    display: block;
+    font-size: 0.85rem;
+    color: #70757a;
+    border-top: 1px solid #f1f3f4;
+    padding-top: 10px;
+}
+
+/* "New Message" Button */
+.btn-new {
+    background-color: #34a853;
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-weight: 600;
+}
+
+.btn-new:hover {
+    background-color: #2d8e47;
+}

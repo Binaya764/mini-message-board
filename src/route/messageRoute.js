@@ -23,4 +23,10 @@ messageRouter.get("/new",(req,res)=>{
     //res.send("new message");
     res.render("form",{title: "Mini messageboard", messages: messages  });
 });
+
+messageRouter.post("/new",(req,res)=>{
+    messages.push({text: messageText, user: messageUser, added: new Date()});
+    console.log("post request");
+    res.redirect("/");
+});
 module.exports = messageRouter;
