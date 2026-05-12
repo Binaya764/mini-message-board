@@ -19,3 +19,6 @@ A simple, real-time message board application built as part of The Odin Project 
    ```bash
    git clone [https://github.com/your-username/mini-messageboard.git](https://github.com/your-username/mini-messageboard.git)
 
+## Screenshot
+<img src="./assets/home_page.png" alt="Dashboard Preview" width="800">
+<img src="./assets/message_form.png" alt="message form Preview" width="800">
